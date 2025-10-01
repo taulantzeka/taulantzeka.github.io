@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taulant Zeka — Portfolio</title>
+  <meta name="description" content="Taulant Zeka — Portfolio and CV" />
+  <style>
+    :root{
+      --bg:#0f1115; --card:#151923; --muted:#8a94a6; --fg:#e6edf3; --fx:#4f8cff; --ok:#22c55e; --warn:#f59e0b;
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.3)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--fx);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(15,17,21,.86);backdrop-filter:saturate(180%) blur(8px);z-index:10;border-bottom:1px solid #212938}
+    .nav{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 16px}
+    .nav .brand{font-weight:700}
+    .nav a{padding:8px 10px;border-radius:10px}
+    .hero{max-width:1100px;margin:28px auto 0;display:grid;grid-template-columns:140px 1fr;gap:24px;padding:0 16px 16px}
+    .avatar{width:140px;height:140px;border-radius:20px;object-fit:cover;border:2px solid #1e2633;box-shadow:var(--shadow)}
+    .card{background:var(--card);border:1px solid #1e2633;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card.pad{padding:18px}
+    h1{font-size:28px;margin:0 0 4px}
+    h2{font-size:22px;margin:18px 0 8px}
+    h3{font-size:18px;margin:16px 0 4px}
+    .muted{color:var(--muted)}
+    .grid{max-width:1100px;margin:12px auto;padding:0 16px;display:grid;gap:16px}
+    .section{scroll-margin-top:80px}
+    .pill{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border:1px solid #273044;border-radius:999px;background:#121722;color:#cbd5e1;font-size:12px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:800px){.hero{grid-template-columns:1fr}.avatar{width:120px;height:120px}}
+    footer{max-width:1100px;margin:30px auto;padding:8px 16px;color:var(--muted);border-top:1px solid #222a39}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid #2a3550;background:#101624;font-weight:600}
+    .btn:hover{background:#0e1422}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#0b0f16;border:1px solid #242c3c;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">Taulant Zeka</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#languages">Languages</a>
+        <a href="assets/CV.pdf" class="btn" title="Download CV (PDF)">Download CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="avatar" src="assets/profile.jpg" alt="Profile photo" />
+      <div class="card pad">
+        <h1>Taulant Zeka</h1>
+        <div class="muted">Lecturer at Faculty of Computer Science at AAB College </div>
+        <div style="margin-top:10px" class="chips">
+          <a class="pill" href="+383 (0) 38 600 005" target="_blank" rel="noopener">Phone</a>
+          <a class="pill" href=""taulant.zeka@aab-edu.net" <taulant.zeka@aab-edu.net>" target="_blank" rel="noopener">Email</a>
+          <a class="pill" href="https://aab-edu.net/" target="_blank" rel="noopener">AAB College </a>
+          <a class="pill" href="https://www.linkedin.com/in/taulant-zeka-2653b714/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section id="about" class="section card pad">
+        <h2>About Me</h2>
+        <p>Lecturer at AAB College, teaching undergraduate courses in Computer Networks and Network Security. Responsible for preparing course materials, syllabi, lectures, assignments and exams. Engaged in academic advising, mentoring students, outreach with industry and alumni. Active in research, conference participation and publication. Researcher in wireless networks, MPTCP, RIS/6G, and software-defined networking.</p>
+      </section>
+
+      <section id="experience" class="section card pad">
+        <h2>Professional Experience</h2>
+        <h3>Lecturer — AAB College, Kosovo</h3>
+        <div class="muted">Nov 2023 – Present</div>
+        <ul class="list">
+          <li>Prepare course materials, syllabi, lectures, and assignments in Computer Networks and Network Security.</li>
+          <li>Mentor and advise students, engage with industry, publish research, and participate in conferences.</li>
+        </ul>
+        <h3>Provisioning Engineer — Charter Communications via 3CIS J.S.C</h3>
+        <div class="muted">Sep 2015 – Present</div>
+        <ul class="list">
+          <li>Provisioning for Juniper, Cisco, Alcatel; supporting Ethernet and Layer‑3 services.</li>
+          <li>Network migration and upgrades to Juniper MX platform.</li>
+          <li>Troubleshooting and enterprise service support.</li>
+        </ul>
+        <h3>Previous Roles</h3>
+        <ul class="list">
+          <li>Acceptance Engineer — Time Warner Cable via 3CIS (2014 – 2015)</li>
+          <li>Core Network Engineer — Vodafone UK Project via 3CIS (2012 – 2014)</li>
+          <li>Network Engineer — Vodafone UK & AT&T Projects via 3CIS (2010 – 2012)</li>
+        </ul>
+      </section>
+
+      <section id="education" class="section card pad">
+        <h2>Education</h2>
+        <h3>MSc in Telecommunication</h3>
+        <div class="muted">University of Prishtina, 2010 – 2014</div>
+        <p>Thesis: Increasing the performance of wireless networks through parallel connection using MPTCP.</p>
+        <h3>BSc in Electrical and Computer Engineering</h3>
+        <div class="muted">University of Prishtina, 2006 – 2009</div>
+      </section>
+
+      <section id="skills" class="section card pad">
+        <h2>Skills</h2>
+        <ul class="list">
+          <li>Networking: Juniper, Cisco, Alcatel platforms; MPLS VPN; IP/MPLS</li>
+          <li>Automation: Python, Netmiko/Paramiko, Pandas</li>
+          <li>Teaching: Course design, mentoring, advising</li>
+          <li>Tools: MS Office, network admin tools</li>
+        </ul>
+      </section>
+
+      <section id="certifications" class="section card pad">
+        <h2>Certifications</h2>
+        <ul class="list">
+          <li>ServiceNow Certified System Administrator (2022)</li>
+          <li>ServiceNow Certified Implementation Specialist – ITSM (2022)</li>
+          <li>Multiple ServiceNow Micro‑Certifications (App Developer, Flow Designer, Virtual Agent, etc.)</li>
+          <li>Citizen Developer & Application Developer Core Skills Suites (2022)</li>
+        </ul>
+      </section>
+
+      <section id="languages" class="section card pad">
+        <h2>Languages</h2>
+        <ul class="list">
+          <li>Albanian — Native</li>
+          <li>English — Excellent</li>
+          <li>Serbo‑Croatian — Intermediate</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Taulant Zeka · Built with GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
